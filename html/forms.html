@@ -1,0 +1,66 @@
+<div class="content" id="forms">
+  <h2>Form Inputs</h1><hr/>
+  <form action="#" class="sized">
+    <div class="text-input">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" placeholder="" />
+      <span class="separator"> </span>
+    </div>
+
+    <div class="text-input">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="" />
+      <span class="separator"> </span>
+    </div>
+
+    <div class="text-input">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="" />
+      <span class="separator"> </span>
+    </div>
+
+    <div class="file-field input-field">
+      <a class="btn btn-large btn-teal btn-radius waves-effect" onClick='$("#upload:hidden").trigger("click");'>File</a>
+      <input style="display:none" id="upload" multiple="multiple" type="file"/>
+      <div class="text-input file-path-wrapper">
+        <label for="fileInput"></label>
+        <input type="text" placeholder="Upload one or more files" name="fileInput" id="fileInput" disabled="disabled" class="file-path">
+        <span class="separator"> </span>
+      </div>
+    </div>
+  </form>
+
+  <br/><hr/>
+  <pre>
+    <code class="language-markup">
+  <xmp><form action="#" class="sized">
+    <div class="text-input">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" placeholder="" />
+      <span class="separator"> </span>
+    </div>
+
+    <div class="text-input">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="" />
+      <span class="separator"> </span>
+    </div>
+
+    <div class="text-input">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="" />
+      <span class="separator"> </span>
+    </div>
+
+    <div class="file-field input-field">
+      <a class="btn btn-large btn-teal btn-radius waves-effect" onClick='$("#upload:hidden").trigger("click");'>File</a>
+      <input style="display:none" id="upload" multiple="multiple" type="file"/>
+      <div class="text-input file-path-wrapper">
+        <label for="fileInput"></label>
+        <input type="text" placeholder="Upload one or more files" name="fileInput" id="fileInput" disabled="disabled" class="file-path">
+        <span class="separator"> </span>
+      </div>
+    </div>
+  </form></xmp></code>
+  </pre>
+</div>
