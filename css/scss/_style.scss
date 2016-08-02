@@ -12,21 +12,15 @@
   box-sizing: border-box;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   color: $text-colour;
   background-color: $primary-colour-dark;
-}
-
-#main {
-  z-index: 2;
-  position: relative;
-
-  overflow: hidden;
-
-  width: 100%;
-  height: 100%;
-
-  top: 0;
 }
 
 .dynamic-colour {
@@ -58,9 +52,7 @@ body {
   z-index: 3;
   line-height: 25px;
   overflow: hidden;
-  -webkit-box-shadow: 3px 4px 10px -1px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 3px 4px 10px -1px rgba(0, 0, 0, 0.44);
-  box-shadow: 3px 4px 10px -1px rgba(0, 0, 0, 0.44);
+  @extend .z-depth-2;
   display: block;
   border-radius: 5px;
 }
