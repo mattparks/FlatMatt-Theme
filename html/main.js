@@ -24,15 +24,6 @@ var pagesHeight = 0;
 
 $(document).ready(function() {
   loadNext(0);
-
-  setTimeout(function() {
-    $("body").append('<script src="./js/style.js"></script>');
-    $("body").append('<script src="./js/prism.js"></script>');
-  }, 250);
-
-  setTimeout(function() {
-    updatePages();
-  }, 300);
 });
 
 function loadNext(i) {
@@ -50,8 +41,11 @@ function loadNext(i) {
     var linkText = document.createTextNode(pages[i].name);
     a.appendChild(linkText);
     a.onclick = function () {
-      scrollTo(pages[i]);
       toggleNav();
+
+      setTimeout(function() {
+        scrollTo(pages[i]);
+      }, 500);
     };
     li.appendChild(a);
     ul.appendChild(li);
@@ -61,8 +55,16 @@ function loadNext(i) {
 
     if (nextI < pages.length) {
       loadNext(nextI);
+    } else {
+      completeLoad();
     }
   });
+}
+
+function completeLoad() {
+  $("body").append('<script src="./js/style.js"></script>');
+  $("body").append('<script src="./js/prism.js"></script>');
+  updatePages();
 }
 
 $(window).resize(function() {

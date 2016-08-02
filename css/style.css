@@ -1939,7 +1939,7 @@ body { color: #212121; background-color: #0c80df; }
 
 .dynamic-colour .col { margin-bottom: 55px; }
 
-.content { z-index: 2; position: relative; width: 90%; background-color: #FFFFFF; padding: 3% 5%; margin-top: 2%; margin-bottom: 2%; z-index: 3; line-height: 25px; overflow: hidden; display: block; border-radius: 5px; }
+.content { background-color: #FFFFFF; padding: 3% 5%; margin-top: 3%; margin-bottom: 3%; z-index: 3; line-height: 25px; overflow: hidden; display: block; border-radius: 5px; }
 
 hr { display: block; height: 2px; border: 0; border-top: 2px solid #bdbdbd; margin: 2em 0; padding: 0; }
 
@@ -1971,7 +1971,7 @@ a { color: color("light-blue", "darken-1"); text-decoration: none; -webkit-tap-h
 
 .z-depth-1-half { box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.z-depth-2, .content, .wrapper, .openNav { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+.z-depth-2, .content, .wrapper, .openNav:hover { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .z-depth-3 { box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
@@ -2093,7 +2093,7 @@ pre[class*="language-"] { padding: 1em; margin: .5em 0; overflow: auto; }
 
 .navOpen { overflow: hidden; }
 
-.wrapper { transition-duration: 0.5s; transition-timing-function: swing; background-color: #0c80df; width: 100%; height: 100%; position: relative; padding: 4% 4%; border-radius: 5px; }
+.wrapper { transition-duration: 0.5s; transition-timing-function: swing; background-color: #0c80df; width: 100%; height: 100%; position: relative; padding: 5% 5%; border-radius: 5px; }
 
 .wrapper.open { transform: translateX(250px) translateY(50px); -webkit-transform: translateX(250px) translateY(50px); box-shadow: 0 0 50px fade(black, 20%); }
 
@@ -2131,11 +2131,11 @@ nav { background-color: #14B9FF; width: 100%; height: 100%; position: fixed; lef
 
 nav ul { width: 250px; margin-top: 50px; }
 
-nav ul:hover li { color: fade(white, 50%); }
+nav ul:hover li a { color: fade(white, 50%); }
 
-nav ul li { transition-duration: 0.25s; display: block; padding: 5px 40px; color: white; letter-spacing: 0.02em; text-align: right; }
+nav ul li a { transition-duration: 0.25s; display: block; padding: 5px 40px; color: white; letter-spacing: 0.02em; text-align: right; }
 
-nav ul li:hover { cursor: pointer; color: white; }
+nav ul li a:hover { cursor: pointer; color: white; }
 
 input::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
 
