@@ -12,9 +12,12 @@ var pages = [
   new Page(1, './html/checkboxes.html', "checkboxes"),
   new Page(2, "./html/radiobuttons.html", "radio-buttons"),
   new Page(3, "./html/dropdowns.html", "dropdowns"),
-  new Page(4, "./html/grids.html", "grids"),
-  new Page(5, "./html/tables.html", "tables"),
-  new Page(6, "./html/forms.html", "forms"),
+  new Page(4, "./html/shadows.html", "shadows"),
+  new Page(5, "./html/grids.html", "grids"),
+  new Page(6, "./html/tables.html", "tables"),
+  new Page(7, "./html/alignment.html", "alignment"),
+  new Page(8, "./html/forms.html", "forms"),
+  new Page(9, "./html/colours.html", "colours"),
 ];
 var pagesHeight = 0;
 
