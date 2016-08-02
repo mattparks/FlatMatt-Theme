@@ -34,7 +34,8 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=tel],
 input[type=number],
-input[type=search] {
+input[type=search],
+textarea {
   width: 100%;
   padding: 1em 0 12px;
   background: none;
@@ -43,7 +44,7 @@ input[type=search] {
   border: none;
   border-bottom: 1px solid #999;
 
-  &:focus + .separator {
+  .separator {
     transform: scaleX(1) translateY(-2px);
     opacity: 1;
   }
@@ -71,6 +72,13 @@ input[type=search] {
   &:focus:not([readonly])+label {
     color: $input-focus-colour;
   }
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  height: $input-textarea-height;
+  background-color: transparent;
 }
 
 .sized {
