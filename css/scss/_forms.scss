@@ -43,6 +43,7 @@ textarea {
   font-weight: 400;
   border: none;
   border-bottom: 1px solid #999;
+  transition: $input-transition;
 
   .separator {
     transform: scaleX(1) translateY(-2px);

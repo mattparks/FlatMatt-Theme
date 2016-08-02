@@ -51,12 +51,14 @@ $dropdown-item-height: 50px !default;
 
 /* Forms. **********/
 $num-cols: 12 !default;
+$input-transition: all .3s !default;
 $gutter-width: 1.5rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
 // Text Inputs + Textarea
 $input-height: 3rem !default;
+$input-textarea-height: 10rem !default;
 $input-border-colour: colour("grey", "base") !default;
 $input-border: 1px solid $input-border-colour !default;
 $input-background: #fff !default;
