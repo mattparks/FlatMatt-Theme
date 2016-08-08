@@ -20,37 +20,7 @@
 
 body {
   color: $text-colour;
-  background-color: $primary-colour-dark;
-}
-
-.dynamic-colour {
-  .red, .pink, .purple, .deep-purple, .indigo, .blue, .light-blue, .cyan, .teal, .green, .light-green, .lime, .yellow, .amber, .orange, .deep-orange, .brown , .grey,  .blue-grey, .black, .white, .transparent {
-    height: 55px;
-    width: 100%;
-    padding: 0 15px;
-    line-height: 55px;
-    font-weight: 500;
-    font-size: 12px;
-    display: block;
-    box-sizing: border-box;
-  }
-
-  .col {
-    margin-bottom: 55px;
-  }
-}
-
-.content {
-  background-color: colour("shades", "white");
-  padding: 3% 5%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  z-index: 3;
-  line-height: 25px;
-  overflow: hidden;
-  @extend .z-depth-2;
-  display: block;
-  border-radius: 5px;
+  background-color: $background-colour;
 }
 
 hr {
@@ -62,6 +32,7 @@ hr {
   padding: 0;
 }
 
+// Text
 .text-center {
   text-align: center;
 }

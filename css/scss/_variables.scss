@@ -1,6 +1,6 @@
 
 /* Colours. **********/
-$primary-colour: colour("blue", "lighten-1") !default;
+$primary-colour: colour("red", "lighten-2") !default;
 $primary-colour-light: lighten($primary-colour, 15%) !default;
 $primary-colour-dark: darken($primary-colour, 15%) !default;
 
@@ -11,6 +11,10 @@ $text-colour: colour("grey", "darken-4") !default;
 $success-colour: color("green", "base") !default;
 $error-colour: color("red", "base") !default;
 $link-colour: color("light-blue", "darken-1") !default;
+
+/* Navbar. **********/
+$navbar-colour: colour("grey", "darken-3") !default;
+$navbar-colour-highlight: lighten($navbar-colour, 15%) !default;
 
 /* Roboto Font. **********/
 $roboto-font-path: "../fonts/roboto/" !default;
@@ -51,12 +55,14 @@ $dropdown-item-height: 50px !default;
 
 /* Forms. **********/
 $num-cols: 12 !default;
+$input-transition: all .3s !default;
 $gutter-width: 1.5rem !default;
 $element-top-margin: $gutter-width/3 !default;
 $element-bottom-margin: ($gutter-width*2)/3 !default;
 
 // Text Inputs + Textarea
 $input-height: 3rem !default;
+$input-textarea-height: 10rem !default;
 $input-border-colour: colour("grey", "base") !default;
 $input-border: 1px solid $input-border-colour !default;
 $input-background: #fff !default;
